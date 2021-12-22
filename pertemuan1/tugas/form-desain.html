@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Membuat Form HTML</title>
+    <!-- menentukan kata kunci untuk mesin pencari -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!-- menentukan deskripsi halaman web -->
+    <meta name="description" content="Praktikum 1 (Pengenalan HTML)">
+    <!-- menentukan penulis halaman -->
+    <meta name="author" content="Gracia Rizka Pasfica">
+    <!-- merefresh halaman web setiap 30 detik-->
+    <meta http-equiv="refresh" content="30">
+    <!-- mengatur viewport untuk membuat situs web terlihat bagus di semua perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color: bisque;">
+    <table align="center" style="background-color: #FFF; padding: 0.75em; border-radius: 10px;">
+        <tr>
+            <td colspan="3">
+                <h1 style="font-family: Poppins; font-weight: bold; text-align: center;">FORM DATA DIRI</h1>
+            </td>
+        </tr>
+        <!-- tr : membuat baris baru -->
+        <tr>
+            <!-- td : membuat kolom baru -->
+            <td>Nama</td>
+            <td> : </td>
+            <td>
+                <!-- membuat inputan untuk pengguna berupa teks-->
+                <input type="text" name="nama" style="border:none; border-radius:3px; background-color:bisque; padding-top: 0.75em; padding-bottom: 0.75em; padding-left: 10px; padding-right: 0.75em;"></input>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td>Gender</td>
+            <td> : </td>
+            <td>
+                <!-- membuat inputan untuk pengguna berupa radio button-->
+                <input type="radio" name="jenis_kelamin" value="F"> Female
+                <br/>
+                <input type="radio" name="jenis_kelamin" value="M"> Male
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td>Address</td>
+            <td> : </td>
+            <td>
+                <input type="text" name="alamat" style="border:none; border-radius:3px; background-color:bisque; padding-top: 0.75em; padding-bottom: 0.75em; padding-left: 10px; padding-right: 0.75em;"></input>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td>Country</td>
+            <td>:</td>
+            <td>
+                <!-- membuat pilihan pengguna menggunakan drop-down -->
+                <select id="country" style="border:none; border-radius:3px; background-color:bisque; padding-top: 0.75em; padding-bottom: 0.75em; padding-left: 10px; padding-right: 0.75em;">
+                    <option value="indonesia">Indonesia</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="singapura">Singapura</option>
+                    <option value="thailand">Thailand</option>
+                </select>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td>Email</td>
+            <td> : </td>
+            <td>
+                <input type="text" name="email" style="border:none; border-radius:3px; background-color:bisque; padding-top: 0.75em; padding-bottom: 0.75em; padding-left: 10px; padding-right: 0.75em;"></input>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td>Photo</td>
+            <td> : </td>
+            <td>
+                <input type="text" name="photo" style="border:none; border-radius:3px; background-color:bisque; padding-top: 0.75em; padding-bottom: 0.75em; padding-left: 10px; padding-right: 0.75em;"></input>
+                <!-- membuat inputan pengguna berupa button -->
+                <input type="submit" value="Browse ... " style="border:none; border-radius: 3px; padding: 10px; background-color: sienna; color: #FFF;">
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td>Comment</td>
+            <td> : </td>
+            <td>
+                <textarea id="comment" placeholder="Comment ..." rows="4" cols="50" style="border:none; border-radius:3px; background-color:bisque; padding-top: 0.75em; padding-bottom: 0.75em; padding-left: 10px; padding-right: 0.75em;"></textarea>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <!-- colspan : menggabungkan 3 kolom menjadi satu -->
+            <!-- align : menentukan tata letak paragraf -->
+            <td colspan="3" align="right">
+                <a href="#">
+                    <input type="submit" value="Submit" style="border:none; border-radius: 3px; padding: 10px; background-color: sienna; color: #FFF;">
+                </a>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+</body>
+
+</html>

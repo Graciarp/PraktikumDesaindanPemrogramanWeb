@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<head>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- <META> -->
+    <!-- 
+        Mendefinisikan tentang informasi / dokumen HTML.
+        Menentukan set karakter, deskripsi halaman, kata kunci, penulis dokumen, dan pengaturan viewport.
+        Tidak ditampilkan dalam halaman web tapi dapat diurai oleh mesin
+    -->
+    <!-- menentukan kata kunci untuk mesin pencari -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!-- menentukan deskripsi halaman web -->
+    <meta name="description" content="Praktikum 1 (Pengenalan HTML)">
+    <!-- menentukan penulis halaman -->
+    <meta name="author" content="Gracia Rizka Pasfica">
+    <!-- merefresh halaman web setiap 30 detik-->
+    <meta http-equiv="refresh" content="30">
+    <!-- mengatur viewport untuk membuat situs web terlihat bagus di semua perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- VIEWPORT -->
+    <!--
+        width=device-width : mengatur lebar halaman untuk mengikuti lebar layar perangkat
+        initial-scale=1.0 : mengatur tingkat zoom awal saat halaman pertama kali dimuat oleh browser
+    -->
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- <TITLE> -->
+    <!--
+        Mendefinisikan judul dokumen
+        Tips :
+        1. Pilih judul deskriptif yang lebih panjang (hindari judul satu / dua kata)
+        2. Tidak memiliki judul lebih panjang 50 - 60 karakter karena mesin pencari hanya akan menampilkan sebanyak itu
+        3. Jangan hanya menggunakan daftar kata sebagai judul
+        4. Buat judul seakurat dan semenarik mungkin
+    -->
+    <title>Praktikum Pemrograman Web</title>
+    <!----------------------------------------------------------------------------------------------------------------->
+</head>
+
+<body>
+    <!-- <HEADING> -->
+    <!--
+        Digunakan untuk mendefinisikan judul HTML.
+        Terdiri dari <h1> (paling penting) hingga <h6> (paling tidak penting).
+    -->
+    <h1>Selamat Datang di Website Gracia Rizka Pasfica</h1>
+    <h2>Web Ini adalah Tutorial Pemrograman Web</h2>
+    <h3>Praktikum Pemrograman Web</h3>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- <P> -->
+    <!--
+        Mendifiniskan sebuah paragraf.
+        Browser secara otomatis menambahkan satu baris kosong sebelum dan sesudan setiap <p> elemen.
+    -->
+    <!-- <A> -->
+    <!--
+        Mendifinisikan sebuah hyperlink yang digunakan untuk menghubungkan link dari satu halaman ke halaman lain.
+        <href> : menunjukan tautan tujuan        
+    -->
+    <!-- <SPAN> -->
+    <!--
+        Menandai bagian dari teks atau dokumen.
+        Mudah ditata menggunakan CSS atau dimanipulasi menggunakan JavaScript.        
+     -->
+    <p>
+        <a href="http:uin-malang.ac.id">Teknik Informatika UIN Malang</a>
+        <span>link for your success way</span>
+    </p>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- <IMAGE> -->
+    <!-- 
+        Menambahkan gambar pada html.
+        src : Letak gambar disimpan.
+        alt : menentukan teks alternatif untuk gambar.
+        width : mengatur lebar gambar.
+        height : mengatur tinggi gambar.
+    -->
+    <img src="edit 2.png" width="180" alt="photo" />
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <!-- FORM -->
+    <!--
+        Digunakan untuk membuat bentuk HTML untuk inputan pengguna.
+        Terdiri dari unsur berikut :
+        1. INPUT : Menentukan sebuah field input dimana pengguna dapat memasukkan data
+        2. TEXTAREA : Mengumpulkan inputan pengguna yang berupa komentar atau ulasan atau teks panjang
+        3. BUTTON : Mendefinisikan sebuah tombol diklik
+        4. SELECT : Digunakan untuk membuat daftar drop-down
+        5. OPTION : Mendifinisikan pilihan dalam daftar pilih 
+        6. OPTGROUP : Digunakan untuk daftar opsi yang panjang
+        7. FIELDSET : Digunakan untuk elemen kelompok terkait dalam formulir
+        8. LABEL 
+        9. OUTPUT
+    -->
+
+    <!-- TABLE -->
+    <!--
+        Mendefinisikan sebuah tabel dalam HTML.
+        <th> : mendefinisikan header tabel 
+        <td> : mendefinisikan sel data yang standar dalam sebuah tabel HTML (kolom)
+        <tr> : mendefiniskan baris pada tabel
+    -->
+
+    <!-- UL LI OL -->
+    <!--
+        ul : mendefinisikan daftar (bullet) unordered
+        li : mendefinisikan sebuah item daftar 
+        ol : mendefinisikan item yang biasanya ditampilkan dengan angka atau huruf
+    -->
+    <form method="POST" action="response2.jsp" enctype="multipart/form-data">
+        <select name="My Lab">
+            <option value=`CC`>Lab. Praktikum Computer Vision</option>
+            <option value=`SI`> Lab. Sistem Informasi </option>
+            <option value=`CAI`> Lab. Computing & AI </option>
+        </select>
+        <input type="file" name="upload" value="" width="200" />
+        <table border="1" width="10">
+            <thead>
+                <tr>
+                    <th>NIM</th>
+                    <th>Mahasiswa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>Gracia Rizka Pasfica</td>
+                </tr>
+                <tr>
+                    <td>124</td>
+                    <td>Budi Susilo</td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li>Sistem Informasi
+                <ul>
+                    <li>Data Warehousing</li>
+                    <li>Enterprise Architecture</li>
+                </ul>
+            </li>
+            <li>Multimedia
+                <ul>
+                    <li>Komputer Grafik</li>
+                    <li>Machinema</li>
+                </ul>
+            </li>
+    </form>
+</body>
